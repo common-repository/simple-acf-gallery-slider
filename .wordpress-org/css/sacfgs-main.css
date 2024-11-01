@@ -1,0 +1,75 @@
+.sacfgs-slider {
+    visibility: hidden; 
+    opacity:0;  
+    transition:opacity 0.5s linear;  
+}
+
+.sacfgs-slider.slick-initialized { 
+    visibility: visible; 
+    opacity:1; 
+}
+
+.sacfgs-slider button.slick-arrow {
+    width:15px;cursor:pointer !important;
+    height:26px;position:absolute;
+    z-index:9;text-indent:-99999px;
+    border:0px !important;
+    padding:20px 15px !important;
+    text-align:center;
+    margin:0px !important;
+    border-radius:0px !important;
+}
+/*Slider Arrow Button Styles*/
+.sacfgs-slider button.slick-next, .sacfgs-slider button.slick-next:hover, .sacfgs-slider button.slick-next:focus button.slick-next:focus{
+    background:#ff0000 url(arrow-right.png) center center no-repeat !important;
+    background-size:15px 26px !important;
+}
+
+.sacfgs-slider button.slick-prev, .sacfgs-slider button.slick-prev:hover, .sacfgs-slider button.slick-prev:focus button.slick-prev:focus{
+    background:#ff0000 url(arrow-left.png) center center no-repeat !important;
+    background-size:15px 26px !important;
+}
+
+/*Slider Dots Styles*/
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+	
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    
+    border: none;
+    border-radius: 100%;
+    background-color: grey;
+    
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: red;
+}
+
+
+.sacfgs-slider .slick-arrow {
+    top:47%; 
+}
+.sacfgs-slider button.slick-next {
+    right:0px;
+}
+.sacfgs-slider button.slick-prev {
+    left:0px;
+}
